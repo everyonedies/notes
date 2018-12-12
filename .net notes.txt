@@ -1,0 +1,31 @@
+clr
+
+The primary role of the CLR is to locate, load, and
+manage .NET objects on your behalf. The CLR also takes care of a number of low-level details such as
+memory management, application hosting, coordinating threads, and performing basic security checks
+(among other low-level details).
+ 
+cts
+
+The CTS specification fully describes all possible data types and all programming constructs supported by the runtime, specifies
+how these entities can interact with each other, and details how they are represented in the .NET metadata format. 
+
+cls
+
+The Common Language Specification, or CLS, is a related specification that defines a subset of common types
+and programming constructs that all .NET programming languages can agree on. 
+
+chapter 13
+
+Неуправляемый код - это обычный машинный код, который получается при компиляции, например, исходного кода на C++, C, assembler etc. 
+Отвечая на ваш вопрос - в общем случае, неуправляемый код не для CLR, CLR предназначена для выполнения управляемого кода.
+
+????????
+Неуправляемый код также полностью управляется CLR и сборщиком мусора. Единственный нюанс - разработчику доступны некоторые шалости с участками памяти, 
+типа фиксации объектов, размещения объектов на стеке или жесткого закрепления объектов, чтобы GC их никогда не собирал. 
+Также следует помнить, что ручное выделение/освобождение памяти на порядок медленнее выделения памяти CLR.
+????????
+
+Среда CLR отвечает за использование управляемого кода, его компиляцию в машинный код и последующее выполнение.
+
+JIT-компилятор используется при выполнении управляемого кода.
