@@ -31,3 +31,6 @@ chapter 13
 JIT-компилятор используется при выполнении управляемого кода.
 
 https://docs.microsoft.com/ru-ru/dotnet/standard/managed-code
+
+Finalize
+IDisposable

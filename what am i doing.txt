@@ -1,0 +1,27 @@
+Создать новый проект 
+ng new angular-tour-of-heroes
+
+Билд приложения, запуск сервера и открытие приложения в браузере
+ng serve --open
+
+Создать новый компонент - создает новую папку с 3 файлами
+ng generate component heroes
+
+Компоненты
+Components are the fundamental building blocks of Angular applications. 
+They display data on the screen, listen for user input, and take action based on that input.
+
+{{value}} - interpolation binding syntax
+
+Two-way binding
+[(ngModel)] is Angular's two-way data binding syntax.
+Example: <input [(ngModel)]="hero.name" placeholder="name">
+
+<li *ngFor="let hero of heroes">
+The *ngFor is Angular's repeater directive. It repeats the host element for each element in a list.
+
+<li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+This is an example of Angular's event binding syntax.
+
+Hide empty details with *ngIf
+<div *ngIf="selectedHero">
